@@ -1,14 +1,12 @@
 from selenium import webdriver
-from time import sleep
-from vars import URL_BOMCONTROLE, SHORT_SLEEP
+from vars import URL_BOMCONTROLE, SHORT_SLEEP, LONG_SLEEP
 
 
 
 def initializeDriver():
     driver = webdriver.Chrome()
     driver.get(URL_BOMCONTROLE)
-    sleep(10)
-    sleep(SHORT_SLEEP)
+    
 
 
 
