@@ -5,6 +5,8 @@ from UserMainLogin.UserLoginVerifyData import UserLoginVerify
 from UserMainLogin.UserLoginGetData import UserLoginGetData
 from UserMainLogin.UserLoginVerifyData import UserLoginVerify
 
+from webdriver.ChromeWebDriver import initializeDriver
+
 while True:
     # Instanciando a classe para obter os dados de login
     login_data = UserLoginGetData()
@@ -33,6 +35,8 @@ while True:
     userOption = input("Deseja tentar novamente? (s/n): ")
     if userOption.lower() != 's':
         break
+
+initializeDriver()
 
 
 
