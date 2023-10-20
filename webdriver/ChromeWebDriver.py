@@ -10,10 +10,6 @@ def initializeDriver():
     sleep(10)
     sleep(SHORT_SLEEP)
 
-    screenWidth = driver.execute_script("return window.screen.width;")
-    screenHeight = driver.execute_script("return window.screen.heigth;")
-
-    driver.set_window_size(screenWidth, screenHeight)
 
 
 # def findElement(xpath, )
